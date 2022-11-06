@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('modal');
+})->name('modal');
+
+Route::get('form_log', function () {
+    return view('form_log');
+})->name('form_log');
+
+Route::get('form_reg', function () {
+    return view('form_reg');
+})->name('form_reg');

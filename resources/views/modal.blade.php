@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -20,8 +20,8 @@
             </div>
             <div class="header-page__end">
                 <div class="header-page__btn">
-                  <button  class="header-page__registred registred"><a class="login-link" href="form_reg.html">Создать аккаунт</a></button>
-                  <button  class="header-page__login registred"><a class="login-link-active" href="form_reg.html">Войти</a></button>
+                  <button  class="header-page__registred registred"><a class="login-link" href="{{route('form_reg')}}">Создать аккаунт</a></button>
+                  <button  class="header-page__login registred"><a class="login-link-active" href="{{route('form_log')}}">Войти</a></button>
                 </div>
             </div>
         </div>
