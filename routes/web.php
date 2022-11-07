@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::group(['namespace' => 'Main'], function (){
+    Route::get('/', 'IndexController');
+});
+
+Route::get('modal', function () {
     return view('modal');
 })->name('modal');
 
