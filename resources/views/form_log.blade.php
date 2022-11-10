@@ -26,7 +26,7 @@
                  <div class="modal-container__content__password" >
                     <div class="acive-pass">
                         <p>Пароль</p>
-                        <a class="link-pass" href="">Забыли пароль?</a>
+                        <a class="link-pass" href="#">Забыли пароль?</a>
                     </div>
 
                     <input class="login-input" type="text"placeholder="Пароль">

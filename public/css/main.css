@@ -348,247 +348,242 @@
     display: none;
   }
 
-
-
-
-  *{
+*{
     box-sizing: border-box;
-  }
-
-
-  body{
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.2;
-    color: #000000;
-    background-color: darkgray;
-  }
-
-
-
-
-  /*********************************************************************HEADER-PAGE***********************************************/
-
-  .header-page {
-
-    max-height: 83px;
-    max-width: 1920px;
-    background-color: aquamarine;
-    padding: 0 21px 0 61px;
-    background: #ffffff;
-
 }
-.header-page__container {
+
+body{
+  font-family: 'TT Norms Pro', sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #222222;
+}
+  .home-page {
+
+  min-width:1000px;
+   margin: auto;
+
+/*----------------------------------------------------------header-page-----------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+}
+.header-page {
+    height: 90px;
+    padding: 0 136px;
     display: flex;
-    text-align: center;
     justify-content: space-between;
+
+    text-align: center;
+    align-items: center;
+    color: #222222;
 }
 .header-page__start {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.header-page__title {
+.logo {
+    font-size: 45px;
+    font-weight: 300;
+    cursor: pointer;
 }
 .header-page__end {
+}
+.header-page__center {
+    display: flex;
+}
+.header-page__nav {
+    display: flex;
+    margin-right: 100px;
+
+
+}
+.header-page__ul {
+    list-style: none;
+    padding-bottom: 0;
     display: flex;
     align-items: center;
 }
-.header-page__btn {
+.header-page__li {
 }
-.header-page__registred {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    margin-right: 20px;
-}
-.header-page__login {
-    background-color: #000000;
-    border-radius: 6px;
-    padding: 10px 24px 10px 24px;
-    color: white;
-    cursor: pointer;
-}
-
-.link-all__post {
+.header-page__link {
     text-decoration: none;
-    color: #000000;
-    margin-left: 113px;
+    color: #222222;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 10px;
 }
-.link-all__blogers {
+
+.header-page__link:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 1px; /*задаём высоту линии*/
+    width: 0%;
+    background-color: #2BB0C3; /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+    }
+
+    .header-page__link:hover:after,
+    .header-page__link:focus:after {
+    width: 100%;
+    }
+.button-form {
+
+ padding: 10px 0px;
+background-color: transparent;
+border-radius: 45px;
+}
+.form-link {
+    color: #222222;
     text-decoration: none;
-    color: #000000;
-    margin-left: 94px;
+    font-size: 22px;
+    font-weight: 400;
+    padding:60px
 
 }
 
-@media (max-width:950px) {
-    .link-all__post{
-     margin-left: 20px;
-    }
-    .link-all__blogers{
-        margin-left: 20px;
-    }
-}
 
-@media (max-width:800px) {
-    .link-all__post{
-     margin-left: 10px;
-     font-size: 14px;
+@media(max-width:1050px){
+    .header-page__link{
+      font-size: 18px;
     }
-    .link-all__blogers{
-        margin-left: 10px;
-        font-size: 14px;
+    .button-form{
+      padding: 5px 0;
     }
-    .header-page__login{
-        padding: 6px 18px;
+    .form-link{
+      padding: 40px;
+    }
+    .header-page__nav{
+        margin-right: 40px;
     }
 }
-
-  /*********************************************************************HEADER-PAGE***********************************************/
-
-
+/*----------------------------------------------------------header-page-----------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
 
 
 
-  .vmodal {
 
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background: #f5f5f56f;
-    display: flex;
-    align-items: center;
-   justify-content: center;
 
-}
-.vmodal1 {
 
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: #f5f5f56f;
+
+
+
+/*----------------------------------------------------------section-top-----------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
+.section-top {
   display: flex;
-  align-items: center;
- justify-content: center;
-
-
+  justify-content: space-between;
+  padding: 0 136px;
 }
-
-.modal-container {
-    padding: 40px;
-    padding-top: 10px;
-    background-color: white;
-
-border-radius : 10px;
-position: relative;
-
-
+.section-top__left {
 }
-
-.modal-container::before {
-  content: '';
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -1;
-  margin: border; /* !importanté */
-  border-radius: inherit; /* !importanté */
-
-  background: linear-gradient(78.67deg, rgba(64, 224, 208, 0.8) 1.21%, rgba(255, 140, 0, 0.7) 51.21%, rgba(255, 0, 128, 0.7) 101.22%);
-filter: blur(15px);
-width: 100%;
-height: 100%;
-
+.section-top__text {
+  width: 580px;
+  height: 588px;
+}
+.section-top__text__h1 {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 146px;
+}
+.section-top__btn {
+}
+.btn-start {
+  border-radius: 45px;
+  padding:22px 90px 22px 90px;
+  background: #2BB0C3;
+  color: #ffffff;
+  border: 0;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 130px;
+  cursor: pointer;
+transition: all .2s;
 }
 
 
-.modal-container__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
-
+.btn-start:hover{
+  background: #239fb2;
 }
-.modal-container__title {
-    margin-right: 165px;
-    font-size: 26px;
+.btn-start:active{
+  transform: scale(0.95);
 }
-.question {
-    color: darkgrey;
+.section-top__right {
+  padding-top: 105px;
 }
-.modal-login {
-    border: 0;
-    background: transparent;
-    cursor: pointer;
+.section-top__img {
 }
-.modal-container__content {
+.img {
 }
-.modal-container__content__login {
-
-}
-.login-input {
-  width: 100%;
-  border-radius: 13px;
-  border: 1px solid #656060;
-  padding: 23px 0 23px 15px;
-
-}
-.modal-container__content__password {
-}
-.modal-container__footer {
-}
-.modal-reg {
-margin-top: 78px;
-padding: 15px 0;
-width: 100%;
-background-color: #000000;
-color: white;
-line-height: 29.05px;
-font-size: 24px;
-border-radius: 25px;
-cursor: pointer;
-}
-
-
-.acive-pass{
+.section-top__estimation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+
 }
-
-.link-pass{
-  text-decoration: none;
-  color: darkgrey;
+.estimation-p {
+ font-size: 23px;
+ font-weight: 500;
 }
+.estimation-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.rememb-pass{
-  margin-top: 25px;
+  height: 100%;
+
 }
-.reg-active__btn{
-  margin-top: 25px;
-}
-
-.rememb-text{
-  margin-right: 10px;
-  transform: scale(2.0);
-}
-
-
-
-.login-link{
-  text-decoration: none;
-  color: #000000;
-  margin-left: 5px;
+.like {
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  perspective: 100px;
 }
 
 
-.login-link-active{
-  color: white;
-  text-decoration: none;
+
+
+.section-top__data  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
 }
+.section-top__data p  {
+  font-size: 23px;
+  font-weight: 500;
+  padding-top: 5px;
+
+}
+.section-top__h3 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width:1450px) {
+     .img{
+      width: 500px;
+      height:370px
+     }
+     .estimation-like{
+      padding-right: 40px;
+     }
+     .section-top__text__h1 {
+      font-size: 60px;
+      line-height: 1.6;
+      padding-top: 60px;
+     }
+     .section-top__text {
+      width: 300px;
+      height: 588px;
+    }
+    .section-top__h3{
+      font-size: 30px;
+    }
+    .btn-start{
+      margin-top: 60px;
+    }
+}
+/*----------------------------------------------------------section-top-----------------------------------------
+----------------------------------------------------------------------------------------------------------------*/
