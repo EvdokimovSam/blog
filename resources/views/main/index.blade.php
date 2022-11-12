@@ -14,7 +14,7 @@
     <header class="header-page">
         <div class="header-page__container container">
             <div class="header-page__start">
-               <h2 class="header-page__title">НАШИ ПРОЕКТ</h2>
+               <h2 class="header-page__title">НАШИ ПРОЕКТЫ</h2>
                <a class="link-all__post" href="">Все посты</a>
                <a  class="link-all__blogers" href="">Все блогеры</a>
             </div>
@@ -26,14 +26,6 @@
             </div>
         </div>
     </header>
-
-
-
-
-
-
-
-
 
     <script src="modal.js"></script>
 </body>
