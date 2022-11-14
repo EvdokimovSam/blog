@@ -17,9 +17,9 @@ Route::group(['namespace' => 'Main'], function (){
     Route::get('/', 'IndexController');
 });
 
-Route::get('modal', function () {
-    return view('modal');
-})->name('modal');
+Route::get('main', function () {
+    return view('main');
+})->name('main');
 
 Route::get('form_log', function () {
     return view('form_log');

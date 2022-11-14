@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
                 <div class="modal-container__header">
                     <h3 class="modal-container__title">Регистрация</h3>
                     <span class="question">Есть аккаунт?</span>
-                    <a class="login-link" href="form_login.html">Войти</a>
+                    <a class="login-link" href="{{route('form_log')}}">Войти</a>
                 </div>
 
 
@@ -35,6 +35,6 @@
                 </div>
             </div>
         </div>
-
+    </form>
 </body>
 </html>
