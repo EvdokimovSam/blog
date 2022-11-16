@@ -13,18 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace' => 'Main'], function (){
-    Route::get('/', 'IndexController');
-});
+/*
+ * Регистрация, вход в ЛК, восстановление пароля
+ */
 
-Route::get('main', function () {
+Route::get('/', function () {
     return view('main');
-})->name('main');
+})->name('/');
 
-Route::get('form_log', function () {
-    return view('form_log');
-})->name('form_log');
 
-Route::get('form_reg', function () {
-    return view('form_reg');
-})->name('form_reg');
+Route::group([
+    'as' => 'auth.', // имя маршрута, например auth.index
+    'prefix' => 'auth', // префикс маршрута, например auth/index
+], function () {
+    // форма регистрации
+    Route::get('register', 'Auth\RegisterController@register')
+        ->name('register');
+
+    Route::get('login', function () {
+        return view('login');
+    })->name('login');
+
+    // создание пользователя
+    Route::post('register', 'Auth\RegisterController@create')
+        ->name('create');
+
+
+});

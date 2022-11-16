@@ -42,7 +42,7 @@
                 </nav>
 
                 <button class="button-form">
-                    <a class="form-link" href="{{route('form_log')}}">Войти</a>
+                    <a class="form-link" href="{{ route('auth.login') }}">Войти</a>
                 </button>
 
             </div>

@@ -14,7 +14,7 @@
             <div class="modal-container__header">
                 <h3 class="modal-container__title">Регистрация</h3>
                 <span class="question">Есть аккаунт?</span>
-                <a class="login-link" href="{{route('form_log')}}">Войти</a>
+                <a class="login-link" href="{{route('auth.login')}}">Войти</a>
             </div>
 
 
