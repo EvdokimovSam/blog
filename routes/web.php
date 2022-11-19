@@ -30,13 +30,19 @@ Route::group([
     Route::get('register', 'Auth\RegisterController@register')
         ->name('register');
 
-    Route::get('login', function () {
-        return view('login');
-    })->name('login');
-
     // создание пользователя
     Route::post('register', 'Auth\RegisterController@create')
         ->name('create');
 
+    // форма входа
+    Route::get('login', 'Auth\LoginController@login')
+        ->name('login');
 
+    // аутентификация
+    Route::post('login', 'Auth\LoginController@authenticate')
+        ->name('auth');
+
+    // выход
+    Route::get('logout', 'Auth\LoginController@logout')
+        ->name('logout');
 });
